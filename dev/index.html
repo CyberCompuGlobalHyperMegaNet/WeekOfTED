@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Gallery</title>
+  <link rel="stylesheet" href="scss/style.css" type="text/css">
+</head>
+<body>
+    <div class="container clearfix">
+
+        <section class="aside">
+
+            <div class="preview prev1">
+                <!-- <a href="#" class="selected" data-full="images/graham-hill.png"><img src="images/graham-hill.png" /></a> -->
+            </div>
+            <div class="preview prev2">
+                <!-- <a href="#" data-full="images/barry-schwartz.png"><img src="images/barry-schwartz.png" /></a> -->
+            </div>
+            <div class="preview prev3">
+                <!-- <a href="#" data-full="images/neil-pasricha.png"><img src="images/neil-pasricha.png" /></a> -->
+            </div>
+            <div class="preview prev4">
+                <!-- <a href="#" data-full="images/shawn-achor.png"><img src="images/shawn-achor.png" /></a> -->
+            </div>
+            <div class="preview prev5">
+                <!-- <a href="#" data-full="images/stefan-sagmeister.png"><img src="images/stefan-sagmeister.png" /></a> -->
+            </div>
+
+        </section>
+
+        <section class="main">
+            <div class="full">
+                <!-- first image is viewable to start -->
+                <!-- <img src="images/fashion/top1large.jpg" /> -->
+            </div>
+
+        </section>
+
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="fancybox/jquery.fancybox.js?v=2.1.4"></script>
+    <script>
+        $(function() {
+            $('.preview a').on('click',function(e){
+            var src = $(this).data('src');
+            $('img.previewFull').attr('src',src);
+
+            });
+        });
+    </script>
+</body>
+</html>

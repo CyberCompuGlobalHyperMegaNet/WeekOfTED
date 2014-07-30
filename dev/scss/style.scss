@@ -37,7 +37,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
         }
         .prev1{
             background-image: url(../images/graham-hill.png);
-
         }
         .prev2{
             background-image: url(../images/barry-schwartz.png);
@@ -55,7 +54,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
     .main{
         width: 70%;
-        height: 1000px;
+        // height: 1000px;
         float: right;
         background-color: green;
 
@@ -111,12 +110,4 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 .gallery .full img:hover {
     cursor: pointer;
-}
-
-.clearfix:after {
-   content: ".";
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
 }

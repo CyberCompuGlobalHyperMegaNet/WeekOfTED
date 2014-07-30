@@ -159,7 +159,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       background-image: url(../images/stefan-sagmeister.png); }
   .container .main {
     width: 70%;
-    height: 1000px;
     float: right;
     background-color: green; }
 
@@ -189,10 +188,3 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .gallery .full img:hover {
   cursor: pointer; }
-
-.clearfix:after {
-  content: ".";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both; }

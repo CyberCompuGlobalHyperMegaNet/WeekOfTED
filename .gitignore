@@ -1,3 +1,4 @@
 node_modules
 /WeekOfTed.sublime-project
 /WeekOfTed.sublime-workspace
+.sass-cache

@@ -1,0 +1,778 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"clear",
+				"clearInterval"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass"
+			],
+			[
+				"mouse",
+				"mouseenter	mouseenter"
+			],
+			[
+				"ready",
+				"ready	$(document).ready"
+			],
+			[
+				"equi",
+				"equipment"
+			],
+			[
+				"ent",
+				"enternedEmail"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"list-sty",
+				"list-style"
+			],
+			[
+				"order",
+				"border-left"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ico",
+				"ico-coffee.jpg	w:125 h:125"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"backgorund",
+				"background-color"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"t",
+				"tilered.png	w:34 h:34"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"border-bottom",
+				"border-bottom-width"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"backgorun",
+				"background-color"
+			],
+			[
+				"bg",
+				"bg+	background: ${1:#fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat};"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"marin-",
+				"margin-top"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"di",
+				"d-i	display: inline;"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"list-st",
+				"list-style"
+			],
+			[
+				"list-style",
+				"list-style-position"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"po",
+				"pos-r	position: relative;"
+			],
+			[
+				"ab",
+				"about.jpg	w:611 h:488"
+			],
+			[
+				"fl-",
+				"fl-r	float: right;"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"backgrou",
+				"background-origin"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"ta",
+				"ta-c	text-align: center;"
+			],
+			[
+				"cl",
+				"cl-b	clear: both;"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 12,
+				"line_ending": "Unix",
+				"name": "node_modules"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 349.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"borde",
+				"Snippet: border-box"
+			],
+			[
+				"clear",
+				"Snippet: clearfix"
+			],
+			[
+				"norma",
+				"Snippet: normalize"
+			],
+			[
+				"viewpor",
+				"Snippet: viewport"
+			],
+			[
+				"normal",
+				"Snippet: normalize"
+			],
+			[
+				"cle",
+				"Snippet: clearfix"
+			],
+			[
+				"border",
+				"Snippet: border-box"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 235.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/bautista/GitHub/alohomora/Gruntfile.js",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/debugging-jquery/debugging.html",
+		"/Users/bautista/GitHub/WeekOfTED/Gruntfile.js",
+		"/Users/bautista/GitHub/alohomora/package.json",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/Week-5-Project/gallery-start/fancybox/jquery.fancybox.js",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/jquery-exercises/challenge-1.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/jquery-exercises/challenge-2.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/jquery-exercises/random-colours.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/jquery-exercises/add-remove-toggle-class.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/jquery-exercises/countdown.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/to-do-app/to-do-app-answer.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-4/JavaScript/arrays.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/to-do-app/to-do-app.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/to-do-app/to-do-app-extras.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/jquery-exercises/array-loop.html",
+		"/Users/bautista/GitHub/web_dev_full_time/5-freelancing/5-tools-of-the-trade.md",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/jquery-events.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/try-jquery.html",
+		"/Users/bautista/GitHub/leviosa/Gruntfile.js",
+		"/Users/bautista/GitHub/starterWorkspace/index.html",
+		"/Users/bautista/GitHub/starterWorkspace/Gruntfile.js",
+		"/Users/bautista/GitHub/leviosa/jade/test.jade",
+		"/Users/bautista/GitHub/leviosa/jade/index.jade",
+		"/Users/bautista/GitHub/starterWorkspace/package.json",
+		"/Users/bautista/Dropbox/HackerYou cloud/Show-n-Tell/notes.md",
+		"/Users/bautista/GitHub/show-n-tell/index.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-4/JavaScript/warrior.html",
+		"/Users/bautista/GitHub/web_dev_full_time/3-JavaScript/05-arrays-methods.md",
+		"/Users/bautista/GitHub/leviosa/package.json",
+		"/Users/bautista/GitHub/leviosa/.gitignore",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-4/JavaScript/consolelogexercises.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-4/JavaScript/functions.html",
+		"/Users/bautista/GitHub/how to git.md",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-4/JavaScript/variables-operators.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-4/JavaScript/variables-operators-functions.html",
+		"/Users/bautista/GitHub/starterWorkspace/.gitignore",
+		"/Users/bautista/GitHub/starterWorkspace/css/main.scss",
+		"/Users/bautista/GitHub/starterWorkspace/css/main.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-4/JQuery/albums.html",
+		"/Users/bautista/GitHub/warmfuzzies/index.html",
+		"/Users/bautista/GitHub/warmfuzzies/css/style.css",
+		"/Users/bautista/GitHub/web_dev_full_time/5-freelancing/6-finding-clients.md",
+		"/Users/bautista/GitHub/web_dev_full_time/2-Tools/1-git_and_github.md",
+		"/Users/bautista/Collections/Web starters/starterWorkspace - Drew Minns/css/main.css",
+		"/Users/bautista/Collections/Web starters/starterWorkspace - Drew Minns/index.html",
+		"/Users/bautista/GitHub/web_dev_full_time/5-freelancing/2-Starting-a-Freelance-Business.md",
+		"/Users/bautista/GitHub/Safiproject/readme.md",
+		"/Users/bautista/GitHub/myfirstrepo/readme.md",
+		"/Users/bautista/GitHub/myfirstrepo/index.html",
+		"/Users/bautista/GitHub/myfirstrepo/css/main.css",
+		"/Users/bautista/GitHub/Safiproject/index.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/css/style.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/style.scss",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/index.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/untitled.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/img/arrow.svg",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/img/rss.svg",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/img/email.svg",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/img/twitter.svg",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/img/fb.svg",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/index-SB.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Week-3-Project-LLC/styles.scss",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-3/sass/styles.scss",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-2/inline-svg/inline-svg.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-2/sprites/index.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-2/inline-svg/images/icon-dog.svg",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive-exercises/ex5-ANSWER.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive-exercises/ex5.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive-exercises/ex2-ANSWER.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive-exercises/ex1-ANSWER.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive-exercises/ex1.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive-exercises/ex2.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive-exercises/ex4.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive-exercises/ex3.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive3.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive2.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-3/Day-1/responsive1.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/css/map.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/css/wuform.css",
+		"/Users/bautista/Downloads/Site Localizations/demo.yosoftware.com/html/berg/menu.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-ProjResource/chez-boris-form 2/css/form.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-3/inputs-exercise.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-ProjResource/chez-boris-form 2/index.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/css/flexslider.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/css/style2.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-ProjResource/chez-boris-form.htm",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-ProjResource/chez-boris-form/css/form.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-ProjResource/chez-boris-form/index.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/contact.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-ProjResource/chez-boris-form/css/structure.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/Project2styleguide.txt",
+		"/Users/bautista/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/contactus.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/js/map.js",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-ProjResource/custom-google-map/contactus.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/css/style3.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-5/jquery-plugin-exercise/FlexSlider-version-2.2/demo/css/demo.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/js/main-min.js",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/index2.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/css/style.css",
+		"/Users/bautista/Downloads/demo.yosoftware.com/html/berg/index4.html",
+		"/Users/bautista/Downloads/demo.yosoftware.com/html/berg/css/custom.css",
+		"/Users/bautista/Downloads/demo.yosoftware.com/html/berg/index5.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/Week2.sublime-project",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/index.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-1/Week-1-Project/style.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-1/Week-1-Project/index.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Week-2-Project/css/social.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-1/Week-1-Project/untitled.css",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-4/slide-out-nav-START.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-3/form.html",
+		"/Users/bautista/Library/Application Support/Sublime Text 3/Packages/User/border-box.sublime-snippet",
+		"/Users/bautista/Library/Application Support/Sublime Text 3/Packages/User/hackeryou.sublime-snippet",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-3/productivity.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/dropdown.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/list-exercises/lists-ex3-centered-nav.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/list-exercises/lists-ex4-dropdown-ANSWER.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/list-exercises/lists-ex3-centered-nav-ANSWER.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/list-exercises/lists-ex2-easynav-ANSWER.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/list-exercises/lists-ex2-easynav.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/list-exercises/lists-ex1-simplenav-ANSWER.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/list-exercises/lists-ex1-simplenav.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/simple-nav.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/nested-lists.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/centered-nav.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/list-style.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-1/positioning-and-floats/ex6-floats2.html",
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-1/positioning-and-floats/ex7-zindex.html"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ul.navItems",
+			".menu",
+			"font-size:",
+			"svg.",
+			"ooter",
+			"margin-right: 3",
+			"margin-right: 30",
+			"footer",
+			"nav",
+			"ul.three",
+			"ul.threeColumns",
+			"ul.navItems",
+			"navItems",
+			"footerText",
+			"wrapper",
+			"footer",
+			"img",
+			"footer",
+			"navItems",
+			"transitio",
+			"border-right",
+			"$socialMedia",
+			"$actionButtons",
+			"p",
+			"$footerLink",
+			"$lightGray",
+			"clearfix",
+			"medium",
+			"hide",
+			"ul",
+			"topLabel",
+			"address",
+			"icomoon",
+			"h1",
+			"ico",
+			"h2",
+			"section",
+			"iframe	",
+			"overflow",
+			"Next",
+			".aboutb",
+			"p,",
+			"p ",
+			"h1",
+			"==========================================================================",
+			"padding-left",
+			".container",
+			"section",
+			".down",
+			".hero",
+			"adress",
+			"height:",
+			"height: 3",
+			"rgba(211, 104, 104, 0.9)",
+			"section",
+			".flexslider ",
+			"flexslider",
+			"wrapper",
+			"height: ",
+			"height:",
+			"margin-top",
+			"icomoon",
+			"home",
+			"image",
+			"flex-next",
+			"image",
+			"images",
+			"padding: 20px",
+			"padding-top: 20px",
+			"nav[role",
+			"padding",
+			"background-color: #000;",
+			"#000",
+			"fefcef",
+			"navigation",
+			"Brown",
+			"'Brown",
+			"font",
+			"font-face",
+			"font",
+			"brown",
+			".center",
+			"center",
+			"logo",
+			"content",
+			"Lato",
+			"section",
+			"div",
+			"navbar",
+			"/* about",
+			"img",
+			"li",
+			"img",
+			"<p>",
+			"p",
+			"div",
+			" li",
+			"li ",
+			"li",
+			"			\n",
+			"hero2",
+			".hero2",
+			"Asap",
+			"Muli",
+			"ffdc2b"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"sideFooter",
+			"$darkPurple",
+			"$lightPurple",
+			"$lightGray",
+			"$gray",
+			"",
+			"rgba(239, 41, 58, 0.9)",
+			"rgb(239, 41, 58, 0.9)",
+			"'Montserrat'",
+			"figure",
+			"figure\n",
+			">\n",
+			"Oxygen",
+			"ffe041"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "node_modules",
+							"bh_regions":
+							[
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Aurora.tmTheme",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "WeekOfTed.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

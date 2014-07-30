@@ -161,7 +161,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     width: 70%;
     height: 1000px;
     float: right;
-    background-color: yellow; }
+    background-color: green; }
 
 .gallery .previews, .gallery .full, .gallery .desc {
   float: left;

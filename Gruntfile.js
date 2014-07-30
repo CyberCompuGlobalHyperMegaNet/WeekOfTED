@@ -6,7 +6,7 @@ module.exports = function(grunt) {
      sass: {
       dist: {
         files: {    //where files go to or from
-      'dist/css/style.css': 'dev/scss/style.scss'   // destination: source
+            'dev/css/style.css': 'dev/scss/style.scss'   // destination: source
       }
       }
      },
@@ -37,7 +37,7 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: ['css/*.scss', '<%= jshint.files %>'],
+        files: ['dev/scss/*.scss', '<%= jshint.files %>'],
         tasks: ['sass', 'jshint', 'autoprefixer']
       },
        jade: {
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
         browsers: ['last 5 version', 'ie 7', 'ie 8', 'ie 9']
       },
       no_dest: {
-        src: 'css/main.css'
+        src: 'dev/scss/style.css'
       }
     },
     connect: {

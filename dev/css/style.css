@@ -134,7 +134,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: 'Calibri','CalibriRegular',Verdana,Arial,Helvetica,sans-serif; }
+  font-family: "Oswald", Helvetica, Arial, sans-serif; }
   .container .aside {
     width: 30%;
     float: left; }
@@ -178,6 +178,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     width: 70%;
     float: right;
     background-color: green; }
+
+header {
+  background-color: pink;
+  height: 90px; }
+  header .topic {
+    width: 30%;
+    background-color: purple;
+    float: left; }
+  header .twitt {
+    width: 70%;
+    background-color: #BADA55;
+    float: right; }
 
 .gallery .previews, .gallery .full, .gallery .desc {
   float: left;

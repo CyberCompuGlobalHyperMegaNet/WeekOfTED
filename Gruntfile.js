@@ -6,7 +6,7 @@ module.exports = function(grunt) {
      sass: {
       dist: {
         files: {    //where files go to or from
-      'dist/main.css': 'dev/main.scss'   // destination: source
+      'dist/css/style.css': 'dev/scss/style.scss'   // destination: source
       }
       }
      },

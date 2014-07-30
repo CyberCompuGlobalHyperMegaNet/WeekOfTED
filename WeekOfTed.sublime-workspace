@@ -243,9 +243,8 @@
 			"file": ".gitignore",
 			"settings":
 			{
-				"buffer_size": 12,
-				"line_ending": "Unix",
-				"name": "node_modules"
+				"buffer_size": 69,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -333,6 +332,7 @@
 	},
 	"file_history":
 	[
+		"/Users/bautista/GitHub/WeekOfTED/.gitignore",
 		"/Users/bautista/GitHub/alohomora/Gruntfile.js",
 		"/Users/bautista/Dropbox/HackerYou cloud/Week-5/debugging-jquery/debugging.html",
 		"/Users/bautista/GitHub/WeekOfTED/Gruntfile.js",
@@ -459,8 +459,7 @@
 		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/nested-lists.html",
 		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/centered-nav.html",
 		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-2/list-style.html",
-		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-1/positioning-and-floats/ex6-floats2.html",
-		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-1/positioning-and-floats/ex7-zindex.html"
+		"/Users/bautista/Dropbox/HackerYou cloud/Week-2/Day-1/positioning-and-floats/ex6-floats2.html"
 	],
 	"find":
 	{
@@ -623,21 +622,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12,
+						"buffer_size": 69,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12,
-								12
+								69,
+								69
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
-							"auto_name": "node_modules",
 							"bh_regions":
 							[
 								"bh_unmatched",
@@ -770,7 +768,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 181.0,
+	"side_bar_width": 196.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

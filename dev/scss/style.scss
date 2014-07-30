@@ -22,33 +22,56 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
         width: 30%;
         float: left;
         // background-color: blue;
-        .preview{
-            height: 200px;
-            width: 100%;
-            border: 1px solid #000;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            a{
-                img{
-                    width: 100%;
+        a{
+            
+            .preview{
+                position: relative;
+                height: 200px;
+                width: 100%;
+                border: 1px solid #000;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                -webkit-transition: 0.2s ease-in-out;
+                -o-transition: 0.2s ease-in-out;
+                transition: 0.2s ease-in-out;
+                .previewDetails{
+                    position: absolute;
+                    left: 15px;
+                    bottom: 15px;
+                    color: #eee;
+                    text-shadow: 1px 1px 2px #000;
+                    .speaker{
+                        font-size: 15px;
+                        margin: 0;
+                    }
+                    .title{
+                        font-size: 25px; 
+                        font-weight: 600;
+                        margin: 0;
+                    }
                 }
+                &:hover{
+                    opacity: 0.7;
+
+                }
+                
             }
-        }
-        .prev1{
-            background-image: url(../images/graham-hill.png);
-        }
-        .prev2{
-            background-image: url(../images/barry-schwartz.png);
-        }
-        .prev3{
-            background-image: url(../images/neil-pasricha.png);
-        }
-        .prev4{
-            background-image: url(../images/shawn-achor.png);
-        }
-        .prev5{
-            background-image: url(../images/stefan-sagmeister.png);
+            .prev1{
+                background-image: url(../images/graham-hill.png);
+            }
+            .prev2{
+                background-image: url(../images/barry-schwartz.png);
+            }
+            .prev3{
+                background-image: url(../images/neil-pasricha.png);
+            }
+            .prev4{
+                background-image: url(../images/shawn-achor.png);
+            }
+            .prev5{
+                background-image: url(../images/stefan-sagmeister.png);
+            }
         }
     }
 

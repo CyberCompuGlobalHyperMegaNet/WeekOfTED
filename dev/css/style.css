@@ -138,24 +138,41 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   .container .aside {
     width: 30%;
     float: left; }
-    .container .aside .preview {
+    .container .aside a .preview {
+      position: relative;
       height: 200px;
       width: 100%;
       border: 1px solid #000;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center; }
-      .container .aside .preview a img {
-        width: 100%; }
-    .container .aside .prev1 {
+      background-position: center;
+      -webkit-transition: 0.2s ease-in-out;
+      -o-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
+      .container .aside a .preview .previewDetails {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        color: #eee;
+        text-shadow: 1px 1px 2px #000; }
+        .container .aside a .preview .previewDetails .speaker {
+          font-size: 15px;
+          margin: 0; }
+        .container .aside a .preview .previewDetails .title {
+          font-size: 25px;
+          font-weight: 600;
+          margin: 0; }
+      .container .aside a .preview:hover {
+        opacity: 0.7; }
+    .container .aside a .prev1 {
       background-image: url(../images/graham-hill.png); }
-    .container .aside .prev2 {
+    .container .aside a .prev2 {
       background-image: url(../images/barry-schwartz.png); }
-    .container .aside .prev3 {
+    .container .aside a .prev3 {
       background-image: url(../images/neil-pasricha.png); }
-    .container .aside .prev4 {
+    .container .aside a .prev4 {
       background-image: url(../images/shawn-achor.png); }
-    .container .aside .prev5 {
+    .container .aside a .prev5 {
       background-image: url(../images/stefan-sagmeister.png); }
   .container .main {
     width: 70%;

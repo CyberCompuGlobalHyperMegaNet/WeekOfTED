@@ -70,12 +70,21 @@
 
         </section>
 
+        <div class="overlay">
+            <div class="iframeContainer">
+                <iframe class="videoEmbed" src="http://embed.ted.com/talks/shawn_achor_the_happy_secret_to_better_work.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                
+            </div>
+
+        </div>
+
+
         <section class="main">
             <div class="" id="videoBox">
             <!-- Shows a still image that links to video -->
+    
 
-            <iframe class="popup" src="http://embed.ted.com/talks/shawn_achor_the_happy_secret_to_better_work.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-
+            
 
             <a href="#"> <img class="vidThumb" src="" alt="thumbnail for video. click to play video."></a>
             <!-- 
@@ -134,13 +143,13 @@
             var syn = $(this).data('synopsis');
             $('#blurb').html(syn); // changes the video blurb
 
-            var syn = $(this).data('name');
+            syn = $(this).data('name');
             $('#speakerName').html(syn); // changes the speakers name
 
-            var syn = $(this).data('job');
+            syn = $(this).data('job');
             $('#speakerJob').html(syn); // changes the speakers job
 
-            var syn = $(this).data('bio');
+            syn = $(this).data('bio');
             $('#speakerBio').html(syn); // changes the speakers bio
 
             src = $(this).data('thumbnail');

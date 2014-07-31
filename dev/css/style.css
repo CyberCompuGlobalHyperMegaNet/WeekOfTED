@@ -174,10 +174,39 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       background-image: url(../images/shawn-achor.png); }
     .container .aside a .prev5 {
       background-image: url(../images/stefan-sagmeister.png); }
-  .container .main {
-    width: 70%;
-    float: right;
-    background-color: green; }
+
+.main {
+  width: 70%;
+  float: right;
+  background-color: #fff;
+  padding: 7%;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.85em; }
+
+.full {
+  width: 100%; }
+
+.vidThumb {
+  width: 100%; }
+
+.synopsis {
+  font-weight: 300;
+  font-size: 1.9em; }
+
+aside.vidSpeaker {
+  width: 100%;
+  background-color: #e3e3e3;
+  padding: 15px; }
+  aside.vidSpeaker h3 {
+    text-transform: uppercase;
+    font-size: 18px; }
+
+.speakerPic {
+  float: left;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px; }
 
 header {
   background-color: pink;
@@ -190,6 +219,10 @@ header {
     width: 70%;
     background-color: #BADA55;
     float: right; }
+
+footer {
+  background-color: red;
+  height: 90px; }
 
 .gallery .previews, .gallery .full, .gallery .desc {
   float: left;

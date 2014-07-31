@@ -4,7 +4,7 @@
 
 // VARIABLES
 
-$headingFont: 'Oswald', Helvetica, Arial, sans-serif;
+$fontStack: 'Oswald', Helvetica, Arial, sans-serif;
 
 // MIXINS
 
@@ -29,7 +29,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    font-family: $headingFont;
+    font-family: $fontStack;
 
     .aside{
         width: 30%;
@@ -88,17 +88,56 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
         }
     }
 
-    .main{
-        width: 70%;
-        // height: 1000px;
-        float: right;
-        background-color: green;
-
-    }
 
 }
 
+//******************************
+// MAIN
+//******************************
 
+
+.main{
+    width: 70%;
+    // height: 1000px;
+    float: right;
+    background-color: #fff;
+    padding: 7%;
+    font-family: $fontStack;
+    font-weight: 400;
+    font-size: 0.85em;
+
+}
+
+.full {
+    width: 100%;
+}
+
+.vidThumb {
+    width: 100%;
+}
+
+.synopsis {
+    font-weight: 300;
+    font-size: 1.9em;
+}
+
+aside.vidSpeaker {
+    width: 100%;
+    background-color: #e3e3e3;
+    padding: 15px;
+
+    h3 {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+}
+
+    .speakerPic {
+        float: left;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
 
 //******************************
 // HEADER
@@ -125,6 +164,11 @@ header {
 //******************************
 // FOOTER
 //******************************
+
+footer {
+    background-color: red;
+    height: 90px;
+}
 
 //******************************
 //old styles from template

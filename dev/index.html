@@ -22,7 +22,7 @@
     <div class="container clearfix">
 
         <section class="aside">
-            <a href="#">
+            <a href="#" data-video="images/graham-hill.png" data-synopsis="Writer and designer <strong>Graham Hill</strong> asks: Can having less stuff, in less room, lead to more happiness? He makes the case for taking up less space, and lays out three rules for editing your life." data-name="Graham Hill" data-job="Journalist, writer, and designer" data-bio="Graham Hill is the founder of TreeHugger.com; he travels the world to tell the story of sustainability, and tweets at @GHill.">
                 <div class="preview prev1">
                     <div class="previewDetails">
                         <p class="speaker">Graham Hill</p>
@@ -31,7 +31,7 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="#" data-video="images/barry-schwartz.png" data-synopsis="Psychologist <strong>Barry Schwartz</strong> takes aim at a central tenet of western societies: freedom of choice. In Schwartz's estimation, choice has made us not freer but more paralyzed, not happier but more dissatisfied." data-name="Barry Schwartz" data-job="Psychologist" data-bio="Barry Schwartz studies the link between economics and psychology, offering startling insights into modern life. Lately, working with Ken Sharpe, he's studying wisdom.">
                 <div class="preview prev2">
                     <div class="previewDetails">
                         <p class="speaker">Barry Schwartz</p>
@@ -40,16 +40,16 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="#" data-video="images/neil-pasricha.png" data-synopsis="<strong>Neil Pasricha</strong>'s blog 1000 Awesome Things savors life's simple pleasures, from free refills to clean sheets. In this heartfelt talk, he reveals the 3 secrets (all starting with A) to leading a life that's truly awesome. (Filmed at TEDxToronto.)" data-name="Neil Pasricha" data-job="Blogger, author" data-bio="Neil Pasricha uses the power of blogging to spread a little optimism each day about the awesome things that make life worth living.">
                 <div class="preview prev3">
                     <div class="previewDetails">
                         <p class="speaker">Neil Pasricha</p>
-                        <p class="title">The 3 A’s of awesome</p>
+                        <p class="title">The 3 A&#146;s of awesome</p>
                     </div>
                 </div>
             </a>
 
-            <a href="#">
+            <a href="#" data-video="images/shawn-achor.png" data-synopsis="We believe that we should work to be happy, but could that be backwards? In this fast-moving and entertaining talk, psychologist <strong>Shawn Achor</strong> argues that actually happiness inspires productivity. (Filmed at TEDxBloomington.)" data-name="Shawn Achor" data-job="Psychologist" data-bio="Shawn Achor is the CEO of Good Think Inc., where he researches and teaches about positive psychology.">
                 <div class="preview prev4">
                     <div class="previewDetails">
                         <p class="speaker">Shawn Achor</p>
@@ -58,7 +58,7 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="#" data-video="images/stefan-sagmeister.png" data-synopsis="Every seven years, designer <strong>Stefan Sagmeister</strong> closes his New York studio for a yearlong sabbatical to rejuvenate and refresh their creative outlook. He explains the often overlooked value of time off and shows the innovative projects inspired by his time in Bali." data-name="Stefan Sagmeister" data-job="Graphic designer" data-bio="Renowned for album covers, posters and his recent book of life lessons, designer Stefan Sagmeister invariably has a slightly different way of looking at things.">
                 <div class="preview prev5">
                     <div class="previewDetails">
                         <p class="speaker">Stefan Sagmeister</p>
@@ -72,20 +72,20 @@
         <section class="main">
             <div class="" id="videoBox">
             <!-- Shows a still image that links to video -->
-            <a href="#"> <img class="vidThumb" src="images/stefan-sagmeister.png" id="barry" alt="thumbnail for video. click to play video."></a>
+            <a href=""> <img class="vidThumb" src="images/stefan-sagmeister.png" id="barry" alt="thumbnail for video. click to play video."></a>
             </div>
             <div class="full">
                 <!-- Summary of video content -->
-                <p class="synopsis">Every seven years, designer <strong>Stefan Sagmeister</strong> closes his New York studio for a yearlong sabbatical to rejuvenate and refresh their creative outlook. He explains the often overlooked value of time off and shows the innovative projects inspired by his time in Bali.</p>
+                <p id="blurb" class="synopsis"></p>
 
             </div>
 
             <aside class="vidSpeaker" role="SpeakerBio">
             <h3>About the speaker</h3>
-            <img class="speakerPic" src="http://images.ted.com/images/ted/1370_253x190.jpg">
-            <strong>Stefan Sagmeister</strong> | Graphic designer<br />
-            Renowned for album covers, posters and his recent book of life lessons, designer Stefan Sagmeister invariably has a slightly different way of looking at things.
-            
+            <img id="speakerPic" class="speakerPic" src="http://images.ted.com/images/ted/1370_253x190.jpg">
+            <span id="speakerName"><strong>Stefan Sagmeister</strong></span> | <span id="speakerJob">Graphic designer</span><br />
+            <p id="speakerBio">Renowned for album covers, posters and his recent book of life lessons, designer Stefan Sagmeister invariably has a slightly different way of looking at things.
+            </p>
             <h3>Share this idea</h3>
             social links
 
@@ -98,13 +98,21 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="fancybox/jquery.fancybox.js?v=2.1.4"></script>
     <script>
-        $(function() {
-            $('.preview a').on('click',function(e){
-            var src = $(this).data('src');
-            $('img.previewFull').attr('src',src);
 
-            });
+        $(function() {
+          $('.aside a').on('click',function(){
+            console.log('function called');
+
+            var src = $(this).data('video');
+            console.log("source: "+ src);
+            $('#videoBox a img').attr('src',src); // changes the video preview image
+
+            var syn = $(this).data('synopsis');
+            console.log(syn);
+            $('#blurb').html(syn); // changes the video blurb
+
+          });
         });
-    </script>
+      </script>
 </body>
 </html>

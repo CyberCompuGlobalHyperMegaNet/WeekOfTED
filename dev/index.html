@@ -22,7 +22,7 @@
     <div class="container clearfix">
 
         <section class="aside">
-            <a href="#">
+            <a href="">
                 <div class="preview prev1">
                     <div class="previewDetails">
                         <p class="speaker">Graham Hill</p>
@@ -71,8 +71,8 @@
 
         <section class="main">
             <div class="" id="videoBox">
-            <!-- Shows a still image that links to video -->
-            <a href="#"> <img class="vidThumb" src="images/stefan-sagmeister.png" id="barry" alt="thumbnail for video. click to play video."></a>
+                <!-- Shows a still image that links to video -->
+                <a href="#"> <img class="vidThumb" src="images/stefan-sagmeister.png" id="barry" alt="thumbnail for video. click to play video."></a>
             </div>
             <div class="full">
                 <!-- Summary of video content -->
@@ -99,12 +99,18 @@
     <script src="fancybox/jquery.fancybox.js?v=2.1.4"></script>
     <script>
         $(function() {
-            $('.preview a').on('click',function(e){
-            var src = $(this).data('src');
-            $('img.previewFull').attr('src',src);
+            $('a.preview').on('click',function(){
+                // var src = $(this).data('src');
+                $('img.previewFull').attr('src',src);
+                
+
 
             });
         });
+
+
+
+
     </script>
 </body>
 </html>

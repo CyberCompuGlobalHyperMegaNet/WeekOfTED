@@ -25,6 +25,9 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
     height: 0;
     clear: both;
 }
+body{
+    position: relative;
+}
 
 .container {
     max-width: 1440px;
@@ -211,4 +214,11 @@ footer {
 
 .gallery .full img:hover {
     cursor: pointer;
+}
+
+.popup{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
 }

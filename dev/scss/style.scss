@@ -114,6 +114,9 @@ body{
     font-family: $fontStack;
     font-weight: 400;
     font-size: 0.85em;
+    .welcomeMessage{
+        display: block;
+    }
     #videoBox{
         -webkit-transition: 0.2s ease-in-out;
         -o-transition: 0.2s ease-in-out;
@@ -180,6 +183,7 @@ body{
     min-height: 100%;
     background-color: rgba(40,40,40,0.9);
     // filter: alpha(opacity = 50);
+
     .iframeContainer{ 
         position: relative;
         display: block;
@@ -209,6 +213,10 @@ body{
 
 .visible{
     display: block;
+}
+
+.notVisible{
+    display: none;
 }
 
 //******************************

@@ -4,7 +4,6 @@
   <title>This Week in TEDtalks</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 </head>
 <body>
     <!-- top banner brand -->
@@ -208,18 +207,23 @@
 
 
         <section class="main">
-            <div class="" id="videoBox">
+
+            <div class="welcomeMessage">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolorum quae aperiam doloribus expedita atque iure iste consequuntur excepturi quod, modi, nemo aliquid omnis. Nesciunt non repudiandae libero, optio ea animi, temporibus incidunt itaque corporis commodi labore sint blanditiis eligendi a. Reiciendis voluptatem modi, sunt quod asperiores tenetur cumque a nostrum libero debitis sed optio, voluptates facere quaerat perspiciatis iste nulla, architecto animi adipisci! Modi asperiores, reiciendis voluptatem ducimus dolore, quibusdam numquam, sed aspernatur ipsam molestiae obcaecati incidunt animi minima quae earum cumque quia soluta officiis vel magnam. Soluta ab vel dolore mollitia obcaecati reprehenderit ipsum repudiandae dolor, possimus dignissimos distinctio, libero maiores facilis saepe cum hic aspernatur culpa. Neque deleniti ea, consequatur cumque distinctio fugiat, omnis. Aut recusandae ducimus in sed voluptates dolorem iure quas enim quasi eveniet eum sunt, maxime quos architecto et repudiandae. Voluptatibus voluptatem totam illo expedita qui eius quod ea recusandae, ducimus illum? Magnam quod excepturi tempora, ullam consequatur asperiores distinctio repellendus dolor ipsam modi velit provident. Quas est asperiores accusamus, totam tenetur quaerat possimus officia nam fugit beatae assumenda ipsa perspiciatis rem itaque laboriosam. Similique numquam non consectetur laborum debitis, dolorem nobis harum quae molestias. Suscipit provident porro, fugit obcaecati, excepturi perferendis? Sapiente, dignissimos qui. Deserunt obcaecati soluta voluptates, nesciunt reprehenderit exercitationem sit accusamus nobis aspernatur debitis recusandae sed quod. Excepturi magni vitae voluptatem quam debitis tenetur facilis commodi illo minima reiciendis repellendus a, iste soluta odio minus aut nisi atque blanditiis sunt dignissimos corrupti illum! Officiis nihil fuga eaque necessitatibus repellat labore tempore, nesciunt, mollitia animi nisi enim temporibus. Dolorum, id. Asperiores eveniet corporis fuga fugit quis consequuntur eum neque at atque, consequatur commodi totam quod doloremque architecto recusandae laboriosam ducimus velit obcaecati. Assumenda adipisci eligendi, aliquid quos eos quibusdam similique explicabo omnis commodi rem ut expedita, obcaecati error minus, ipsa est possimus!
+            </div>
+
+            <div class="notVisible" id="videoBox">
             <!-- Shows a still image that links to video -->
             <a href="#" class="videoOpen" data-embed=""> <img class="vidThumb" src="" alt="thumbnail for video. click to play video."></a>
 
             </div>
-            <div class="full">
+            <div class="full notVisible">
                 <!-- Summary of video content -->
                 <p id="blurb" class="synopsis"></p>
 
             </div>
 
-            <aside class="vidSpeaker" role="SpeakerBio">
+            <aside class="vidSpeaker notVisible" role="SpeakerBio">
                 <h2>About the speaker</h2>
                 <img id="speakerPic" class="speakerPic" src="">
                 <span id="speakerName"><strong></strong></span> | <span id="speakerJob"></span><br />
@@ -239,12 +243,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
 
-        // function displayFrame(){
-        //     var iframe = $("#videoFrame")[0];
-        //     iframe.focus();
-            
-        // }
-
         // functions to add and remove the visible class to the bioWrapper div, which by default is display:none
         $('.videoOpen').click(function(){
             $('.overlay').addClass('visible');
@@ -259,6 +257,8 @@
         });
 
         $(function() {
+            var firstClick=false;
+
           $('.aside a').on('click',function(){
 
             var src = $(this).data('video');
@@ -282,6 +282,14 @@
             src = $(this).data('embed');
             $('.main a').data('embed',src); // changes the embed src video link
             console.log(src);
+
+            if (firstClick!=true){
+                $('.welcomeMessage').css("display", "none");
+                $('#videoBox').toggleClass('notVisible');
+                $('.full').toggleClass('notVisible');
+                $('.vidSpeaker').toggleClass('notVisible');
+                firstClick=true;
+            }
 
           });
 

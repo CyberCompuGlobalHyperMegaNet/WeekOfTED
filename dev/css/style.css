@@ -191,6 +191,8 @@ body {
   font-family: "Oswald", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 0.85em; }
+  .main .welcomeMessage {
+    display: block; }
   .main #videoBox {
     -webkit-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
@@ -262,6 +264,9 @@ body {
 
 .visible {
   display: block; }
+
+.notVisible {
+  display: none; }
 
 header {
   background-color: pink;

@@ -110,15 +110,19 @@ body{
     float: right;
     background-color: #fff;
     padding: 7%;
+    padding-bottom: 0;
     font-family: $fontStack;
     font-weight: 400;
     font-size: 0.85em;
-    #videoBox:hover{
+    #videoBox{
         -webkit-transition: 0.2s ease-in-out;
         -o-transition: 0.2s ease-in-out;
-        transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;   
         &:hover{
             opacity: 0.7;
+            -webkit-transition: 0.2s ease-in-out;
+            -o-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
         }
     }
 
@@ -173,8 +177,10 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.8);
-    .iframeContainer{
+    min-height: 100%;
+    background-color: rgba(40,40,40,0.9);
+    // filter: alpha(opacity = 50);
+    .iframeContainer{ 
         position: relative;
         display: block;
         width: 854px;

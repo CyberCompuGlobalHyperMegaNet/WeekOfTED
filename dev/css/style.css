@@ -187,15 +187,19 @@ body {
   float: right;
   background-color: #fff;
   padding: 7%;
+  padding-bottom: 0;
   font-family: "Oswald", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 0.85em; }
-  .main #videoBox:hover {
+  .main #videoBox {
     -webkit-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out; }
-    .main #videoBox:hover:hover {
-      opacity: 0.7; }
+    .main #videoBox:hover {
+      opacity: 0.7;
+      -webkit-transition: 0.2s ease-in-out;
+      -o-transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out; }
 
 .full {
   width: 100%; }
@@ -235,7 +239,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8); }
+  min-height: 100%;
+  background-color: rgba(40, 40, 40, 0.9); }
   .overlay .iframeContainer {
     position: relative;
     display: block;

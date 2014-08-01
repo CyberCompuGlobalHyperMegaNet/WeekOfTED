@@ -154,17 +154,21 @@ body {
       transition: 0.2s ease-in-out; }
       .container .aside a .preview .previewDetails {
         position: absolute;
-        left: 15px;
-        bottom: 15px;
+        left: 0;
+        right: 0;
+        bottom: 0;
         color: #eee;
-        text-shadow: 1px 1px 2px #000; }
+        text-shadow: 1px 1px 2px #000;
+        background: linear-gradient(transparent, #444444); }
+        .container .aside a .preview .previewDetails p {
+          margin: 0;
+          padding-left: 15px; }
         .container .aside a .preview .previewDetails .speaker {
-          font-size: 15px;
-          margin: 0; }
+          font-size: 15px; }
         .container .aside a .preview .previewDetails .title {
           font-size: 25px;
           font-weight: 600;
-          margin: 0; }
+          padding-bottom: 15px; }
       .container .aside a .preview:hover {
         opacity: 0.7; }
     .container .aside a .prev1 {
@@ -186,6 +190,12 @@ body {
   font-family: "Oswald", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 0.85em; }
+  .main #videoBox:hover {
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .main #videoBox:hover:hover {
+      opacity: 0.7; }
 
 .full {
   width: 100%; }
@@ -197,19 +207,56 @@ body {
   font-weight: 300;
   font-size: 1.9em; }
 
-aside.vidSpeaker {
+.vidSpeaker {
+  float: left;
   width: 100%;
   background-color: #e3e3e3;
   padding: 15px; }
-  aside.vidSpeaker h3 {
+  .vidSpeaker h2 {
+    font-size: 30px;
+    margin-top: 0; }
+  .vidSpeaker h3 {
     text-transform: uppercase;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-left: 20px; }
+  .vidSpeaker .speakerPic {
+    float: left;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px; }
+  .vidSpeaker #speakerName,
+  .vidSpeaker #speakerBio {
+    margin-left: 20px; }
 
-.speakerPic {
-  float: left;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px; }
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .overlay .iframeContainer {
+    position: relative;
+    display: block;
+    width: 854px;
+    margin: 0 auto; }
+    .overlay .iframeContainer .close .closeButton {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      fill: #fff; }
+      .overlay .iframeContainer .close .closeButton:hover {
+        fill: #00b680; }
+    .overlay .iframeContainer .videoEmbed {
+      display: block;
+      margin: 0 auto;
+      margin-top: 15%; }
+
+.visible {
+  display: block; }
 
 header {
   background-color: pink;
@@ -226,44 +273,3 @@ header {
 footer {
   background-color: red;
   height: 90px; }
-
-.gallery .previews, .gallery .full, .gallery .desc {
-  float: left;
-  margin-right: 10px; }
-
-.gallery .desc, .gallery .full {
-  width: 400px;
-  font-size: 12px; }
-
-.gallery .desc h2 {
-  margin-top: 0; }
-
-.gallery .previews a {
-  display: block;
-  margin-bottom: 10px; }
-
-.gallery .full, .gallery .full img {
-  height: 600px; }
-
-.gallery .previews a, .gallery .full {
-  border: 4px solid #eee; }
-
-.gallery .previews a:hover, .gallery .previews a.selected {
-  border: 4px solid #777; }
-
-.gallery .full img:hover {
-  cursor: pointer; }
-
-.overlay {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8); }
-  .overlay .iframeContainer {
-    position: relative; }
-
-.videoEmbed {
-  margin: 0 auto; }

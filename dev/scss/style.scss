@@ -53,18 +53,23 @@ body{
                 transition: 0.2s ease-in-out;
                 .previewDetails{
                     position: absolute;
-                    left: 15px;
-                    bottom: 15px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
                     color: #eee;
                     text-shadow: 1px 1px 2px #000;
+                    background: linear-gradient(transparent, #444);
+                    p{
+                        margin: 0;
+                        padding-left: 15px;
+                    }
                     .speaker{
                         font-size: 15px;
-                        margin: 0;
                     }
                     .title{
                         font-size: 25px; 
                         font-weight: 600;
-                        margin: 0;
+                        padding-bottom: 15px;   
                     }
                 }
                 &:hover{
@@ -108,6 +113,14 @@ body{
     font-family: $fontStack;
     font-weight: 400;
     font-size: 0.85em;
+    #videoBox:hover{
+        -webkit-transition: 0.2s ease-in-out;
+        -o-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
 
 }
 
@@ -124,23 +137,73 @@ body{
     font-size: 1.9em;
 }
 
-aside.vidSpeaker {
+.vidSpeaker {
+    float: left;
     width: 100%;
     background-color: #e3e3e3;
     padding: 15px;
-
+    h2{
+        font-size: 30px;
+        margin-top: 0;
+    }
     h3 {
         text-transform: uppercase;
         font-size: 18px;
+        margin-left: 20px;
     }
-}
-
     .speakerPic {
         float: left;
         border-radius: 50%;
         width: 150px;
         height: 150px;
     }
+    #speakerName,
+    #speakerBio{
+        margin-left: 20px;
+    }
+}
+
+    
+
+
+.overlay{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    .iframeContainer{
+        position: relative;
+        display: block;
+        width: 854px;
+        margin: 0 auto;
+        .close{
+            .closeButton{
+                position: absolute;
+                top: -40px;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                fill: #fff;
+                &:hover{
+                    fill: #00b680;
+                }
+            }
+        }
+        .videoEmbed{
+            display: block;
+            margin: 0 auto;
+            margin-top: 15%;
+ 
+        }
+    } 
+}
+
+.visible{
+    display: block;
+}
 
 //******************************
 // HEADER
@@ -173,72 +236,3 @@ footer {
     height: 90px;
 }
 
-//******************************
-//old styles from template
-//******************************
-
-
-
-
-.gallery {}
-.gallery .previews, .gallery .full, .gallery .desc {
-    float: left;
-    margin-right: 10px;
-}
-
-.gallery .desc, .gallery .full {
-    width: 400px;
-    font-size: 12px;
-}
-
-.gallery .desc h2 {
-    margin-top: 0;
-}
-
-.gallery .previews a {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.gallery .full, .gallery .full img {
-    height: 600px;
-}
-
-.gallery .previews a, .gallery .full {
-    border: 4px solid #eee;
-}
-
-.gallery .previews a:hover, .gallery .previews a.selected {
-    border: 4px solid #777;
-}
-
-.gallery .full img:hover {
-    cursor: pointer;
-}
-
-.overlay{
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.8);
-    .iframeContainer{
-        position: relative;
-        // left: 50%;
-        // top: 50%;
-
-    }
-    
-}
-
-.videoEmbed{
-    // display: block;
-    margin: 0 auto;
-    // left: 50%;
-    // top: 50%;
-    // transform:translate(50%,50%); 
-    // -webkit-transform:translate(50%,50%);
-    
-}

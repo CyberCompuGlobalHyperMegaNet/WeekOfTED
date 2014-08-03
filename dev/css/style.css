@@ -193,6 +193,19 @@ body {
   font-size: 0.85em; }
   .main .welcomeMessage {
     display: block; }
+    .main .welcomeMessage .bigArrow {
+      position: relative;
+      float: right;
+      width: 0;
+      height: 0;
+      border-top: 200px solid transparent;
+      border-right: 400px solid #c0392b;
+      border-bottom: 200px solid transparent; }
+      .main .welcomeMessage .bigArrow p {
+        position: absolute;
+        top: -60px;
+        left: 50px;
+        width: 350px; }
   .main #videoBox {
     -webkit-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
@@ -226,13 +239,11 @@ body {
     font-size: 18px;
     margin-left: 20px; }
   .vidSpeaker .speakerPic {
+    margin-right: 20px;
     float: left;
     border-radius: 50%;
     width: 150px;
     height: 150px; }
-  .vidSpeaker #speakerName,
-  .vidSpeaker #speakerBio {
-    margin-left: 20px; }
 
 .overlay {
   display: none;

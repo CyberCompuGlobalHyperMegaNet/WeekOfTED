@@ -116,6 +116,21 @@ body{
     font-size: 0.85em;
     .welcomeMessage{
         display: block;
+        .bigArrow{
+            position: relative;
+            float: right;
+            width: 0;
+            height: 0;
+            border-top: 200px solid transparent;
+            border-right: 400px solid #c0392b;
+            border-bottom: 200px solid transparent;
+            p{
+                position: absolute;
+                top: -60px;
+                left: 50px;
+                width: 350px;
+            }
+        }
     }
     #videoBox{
         -webkit-transition: 0.2s ease-in-out;
@@ -159,15 +174,13 @@ body{
         margin-left: 20px;
     }
     .speakerPic {
+        margin-right: 20px; 
         float: left;
         border-radius: 50%;
         width: 150px;
         height: 150px;
     }
-    #speakerName,
-    #speakerBio{
-        margin-left: 20px;
-    }
+
 }
 
     

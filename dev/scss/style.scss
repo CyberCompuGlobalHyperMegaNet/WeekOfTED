@@ -1,10 +1,12 @@
-//weights: Oswald Normal 400 Light 300 Bold 700
+// useable font weights: Oswald Normal 400, Light 300, Bold 700
 
 // INCLUDES
 
 // VARIABLES
 
 $fontStack: 'Oswald', Helvetica, Arial, sans-serif;
+$fancyScript: 'Yellowtail', cursive;
+$footerColor: #c0392b;
 
 // MIXINS
 
@@ -29,7 +31,11 @@ body{
     position: relative;
 }
 
-.container {
+strong {
+    font-weight: 700;
+}
+
+.contain {
     max-width: 1440px;
     margin: 0 auto;
     font-family: $fontStack;
@@ -259,7 +265,43 @@ header {
 //******************************
 
 footer {
-    background-color: red;
-    height: 90px;
+    background-color: $footerColor;
+    max-height: 200px;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    position: relative;
+
+    .third { // divides the footer in 3 columns
+        width: 33.33%;
+        float: left;
+    }
+
+    .weekTheme {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-family: $fancyScript; 
+        color: #fdf6f0;
+        text-shadow: 5px 3px #940f08;
+        font-size: 72px;
+    }
+
+    .footerinfo {
+        position: absolute;
+        width: 30%;
+        max-height: 200px;
+        right: 30px;
+        top: 30px;
+        font-family: $fontStack;
+        font-weight: 300;
+        color: #fdf6f0;
+        text-align: left;
+        vertical-align: middle;
+            
+            b {
+                font-weight: 400;
+            }
+    }
 }
 

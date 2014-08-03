@@ -134,14 +134,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   position: relative; }
 
-.container {
+strong {
+  font-weight: 700; }
+
+.contain {
   max-width: 1440px;
   margin: 0 auto;
   font-family: "Oswald", Helvetica, Arial, sans-serif; }
-  .container .aside {
+  .contain .aside {
     width: 30%;
     float: left; }
-    .container .aside a .preview {
+    .contain .aside a .preview {
       position: relative;
       height: 200px;
       width: 100%;
@@ -152,7 +155,7 @@ body {
       -webkit-transition: 0.2s ease-in-out;
       -o-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out; }
-      .container .aside a .preview .previewDetails {
+      .contain .aside a .preview .previewDetails {
         position: absolute;
         left: 0;
         right: 0;
@@ -160,26 +163,26 @@ body {
         color: #eee;
         text-shadow: 1px 1px 2px #000;
         background: linear-gradient(transparent, #444444); }
-        .container .aside a .preview .previewDetails p {
+        .contain .aside a .preview .previewDetails p {
           margin: 0;
           padding-left: 15px; }
-        .container .aside a .preview .previewDetails .speaker {
+        .contain .aside a .preview .previewDetails .speaker {
           font-size: 15px; }
-        .container .aside a .preview .previewDetails .title {
+        .contain .aside a .preview .previewDetails .title {
           font-size: 25px;
           font-weight: 600;
           padding-bottom: 15px; }
-      .container .aside a .preview:hover {
+      .contain .aside a .preview:hover {
         opacity: 0.7; }
-    .container .aside a .prev1 {
+    .contain .aside a .prev1 {
       background-image: url(../images/graham-hill.png); }
-    .container .aside a .prev2 {
+    .contain .aside a .prev2 {
       background-image: url(../images/barry-schwartz.png); }
-    .container .aside a .prev3 {
+    .contain .aside a .prev3 {
       background-image: url(../images/neil-pasricha.png); }
-    .container .aside a .prev4 {
+    .contain .aside a .prev4 {
       background-image: url(../images/shawn-achor.png); }
-    .container .aside a .prev5 {
+    .contain .aside a .prev5 {
       background-image: url(../images/stefan-sagmeister.png); }
 
 .main {
@@ -292,5 +295,33 @@ header {
     float: right; }
 
 footer {
-  background-color: red;
-  height: 90px; }
+  background-color: #c0392b;
+  max-height: 200px;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  position: relative; }
+  footer .third {
+    width: 33.33%;
+    float: left; }
+  footer .weekTheme {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-family: "Yellowtail", cursive;
+    color: #fdf6f0;
+    text-shadow: 5px 3px #940f08;
+    font-size: 72px; }
+  footer .footerinfo {
+    position: absolute;
+    width: 30%;
+    max-height: 200px;
+    right: 30px;
+    top: 30px;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #fdf6f0;
+    text-align: left;
+    vertical-align: middle; }
+    footer .footerinfo b {
+      font-weight: 400; }

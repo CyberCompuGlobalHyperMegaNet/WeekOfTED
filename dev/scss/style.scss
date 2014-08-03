@@ -110,6 +110,18 @@ strong {
 // MAIN
 //******************************
 
+.thisWeek {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.tedTopic {
+    font-family: $fancyScript;
+    color: $footerColor;
+    font-size: 113px;
+    line-height: 101px;
+
+}
 
 .main{
     overflow: hidden;
@@ -126,15 +138,25 @@ strong {
     .welcomeMessage{
         display: block;
 
+
         .bigArrow{
             position: relative;
-            float: right;
+            left: 120%;
+
             width: 0;
             height: 0;
             border-top: 200px solid transparent;
             border-right: 400px solid $footerColor;
             border-bottom: 200px solid transparent;
            
+           // animations
+
+            -webkit-animation: arrowAnimation ease-in-out 0.7s forwards; /* Chrome, Safari, Opera */
+            -webkit-animation-delay: 0.7s; /* Safari and Chrome */
+            animation: arrowAnimation ease-in-out 0.7s forwards;
+            animation-delay: 0.7s;
+
+
             p{
                 position: absolute;
                 width: 350px;
@@ -143,8 +165,8 @@ strong {
                 left: 25px;
                 text-align: right;
                 font-family: $fancyScript;
-                font-size: 68px;
-                line-height: 73px;
+                font-size: 73px;
+                line-height: 68px;
             }
         }
     }
@@ -161,6 +183,23 @@ strong {
     }
 
 }
+
+
+//animation stuff
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes arrowAnimation {
+    0%  {left: 120%; top:0px;}
+    70%  {left: 10%; top:0px;}
+    100%  {left: 20%; top:0px;}
+    }
+
+    /* Standard syntax */
+    @keyframes myfirst {
+    0%  {left: 120%; top:0px;}
+    70%  {left: 0%; top:0px;}
+    100%  {left: 10%; top:0px;}
+    }
 
 .full {
     width: 100%;

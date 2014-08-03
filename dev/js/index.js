@@ -1,6 +1,6 @@
 //Still working on getting the JS right. Thanks for all the views, hearts and comments!
 
-var limitX = 70, limitY = 70;
+var limitX = 100, limitY = 100;
 var containerW = $('.smileybox').width() - $('.smileybox').offset().left;
 var containerH = $('.smileybox').height() - $('.smileybox').offset().top;
 $( ".smileybox" ).mousemove(function(e) {

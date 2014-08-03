@@ -7,6 +7,7 @@
 $fontStack: 'Oswald', Helvetica, Arial, sans-serif;
 $fancyScript: 'Yellowtail', cursive;
 $footerColor: #c0392b;
+$footerText: #fdf6f0;
 
 // MIXINS
 
@@ -111,6 +112,7 @@ strong {
 
 
 .main{
+    overflow: hidden;
     width: 70%;
     // height: 1000px;
     float: right;
@@ -120,21 +122,29 @@ strong {
     font-family: $fontStack;
     font-weight: 400;
     font-size: 0.85em;
+
     .welcomeMessage{
         display: block;
+
         .bigArrow{
             position: relative;
             float: right;
             width: 0;
             height: 0;
             border-top: 200px solid transparent;
-            border-right: 400px solid #c0392b;
+            border-right: 400px solid $footerColor;
             border-bottom: 200px solid transparent;
+           
             p{
                 position: absolute;
-                top: -60px;
-                left: 50px;
                 width: 350px;
+                color: #fdf6f0;
+                top: -162px;
+                left: 25px;
+                text-align: right;
+                font-family: $fancyScript;
+                font-size: 68px;
+                line-height: 73px;
             }
         }
     }
@@ -180,13 +190,12 @@ strong {
         margin-left: 20px;
     }
     .speakerPic {
-        margin-right: 20px; 
         float: left;
         border-radius: 50%;
         width: 150px;
         height: 150px;
+        margin-right: 15px;
     }
-
 }
 
     
@@ -239,6 +248,14 @@ strong {
 }
 
 //******************************
+// ARROW ANIMATION
+//******************************
+
+@keyframes slideLeft {
+    0% { right: -500px; }
+    100% { right: 900px;}
+}
+//******************************
 // HEADER
 //******************************
 
@@ -272,6 +289,11 @@ footer {
     padding-top: 15px;
     position: relative;
 
+    a, a:hover, a:visited {
+        text-decoration: none;
+        color: $footerText;
+    }
+
     .third { // divides the footer in 3 columns
         width: 33.33%;
         float: left;
@@ -282,7 +304,7 @@ footer {
         top: 30px;
         left: 30px;
         font-family: $fancyScript; 
-        color: #fdf6f0;
+        color: $footerText;
         text-shadow: 5px 3px #940f08;
         font-size: 72px;
     }

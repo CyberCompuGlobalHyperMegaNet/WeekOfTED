@@ -186,6 +186,7 @@ strong {
       background-image: url(../images/stefan-sagmeister.png); }
 
 .main {
+  overflow: hidden;
   width: 70%;
   float: right;
   background-color: #fff;
@@ -206,9 +207,14 @@ strong {
       border-bottom: 200px solid transparent; }
       .main .welcomeMessage .bigArrow p {
         position: absolute;
-        top: -60px;
-        left: 50px;
-        width: 350px; }
+        width: 350px;
+        color: #fdf6f0;
+        top: -162px;
+        left: 25px;
+        text-align: right;
+        font-family: "Yellowtail", cursive;
+        font-size: 68px;
+        line-height: 73px; }
   .main #videoBox {
     -webkit-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
@@ -242,11 +248,11 @@ strong {
     font-size: 18px;
     margin-left: 20px; }
   .vidSpeaker .speakerPic {
-    margin-right: 20px;
     float: left;
     border-radius: 50%;
     width: 150px;
-    height: 150px; }
+    height: 150px;
+    margin-right: 15px; }
 
 .overlay {
   display: none;
@@ -282,6 +288,12 @@ strong {
 .notVisible {
   display: none; }
 
+@keyframes slideLeft {
+  0% {
+    right: -500px; }
+
+  100% {
+    right: 900px; } }
 header {
   background-color: pink;
   height: 90px; }
@@ -301,6 +313,9 @@ footer {
   padding: 0;
   padding-top: 15px;
   position: relative; }
+  footer a, footer a:hover, footer a:visited {
+    text-decoration: none;
+    color: #fdf6f0; }
   footer .third {
     width: 33.33%;
     float: left; }

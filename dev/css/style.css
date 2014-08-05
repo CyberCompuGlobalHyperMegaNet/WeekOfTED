@@ -163,9 +163,9 @@ strong {
         bottom: 0;
         color: #eee;
         text-shadow: 1px 1px 2px #000;
-        background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#444444));
-        background: -webkit-linear-gradient(transparent, #444444);
-        background: linear-gradient(transparent, #444444); }
+        background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#380909));
+        background: -webkit-linear-gradient(transparent, #380909);
+        background: linear-gradient(transparent, #380909); }
         .contain .aside a .preview .previewDetails p {
           margin: 0;
           padding-left: 15px; }
@@ -176,18 +176,10 @@ strong {
           font-weight: 600;
           padding-bottom: 15px; }
       .contain .aside a .preview:hover {
-        opacity: 0.7; }
-    .contain .aside a div[class*='prev'] {
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      filter: grayscale(100%);
-      -webkit-filter: url(grayscale.svg);
-              filter: url(grayscale.svg);
-      /* Firefox 4+ */
-      -webkit-filter: gray;
-              filter: gray;
-      /* IE 6-9 */ }
+        -webkit-filter: sepia(0) saturate(2);
+                filter: sepia(0) saturate(2);
+        -webkit-transition: all 0.5s;
+                transition: all 0.5s; }
     .contain .aside a .prev1 {
       background-image: url(../images/graham-hill.png); }
     .contain .aside a .prev2 {
@@ -259,7 +251,8 @@ strong {
       color: #fff;
       text-shadow: 1px 1px 2px #000; }
     .main #videoBox:hover {
-      opacity: 0.7;
+      -webkit-filter: saturate(1.8);
+              filter: saturate(1.8);
       -webkit-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out; }
 
@@ -439,7 +432,7 @@ footer {
       color: #fdf6f0;
       font-weight: 300;
       border-bottom: 1px dotted #fdf6f0; }
-    footer .footerinfo a:hover, footer .footerinfo a:active, footer .footerinfo a:focus {
+    footer .footerinfo a:hover, footer .footerinfo a:active, footer .footerinfo a:focus, footer .footerinfo a:visited:hover {
       background-color: #fdf6f0;
       color: #c0392b;
       padding: 0 8px;

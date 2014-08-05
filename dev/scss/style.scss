@@ -65,7 +65,7 @@ strong {
                     bottom: 0;
                     color: #eee;
                     text-shadow: 1px 1px 2px #000;
-                    background: linear-gradient(transparent, #444);
+                    background: linear-gradient(transparent, #380909);
                     p{
                         margin: 0;
                         padding-left: 15px;
@@ -80,19 +80,11 @@ strong {
                     }
                 }
                 &:hover{
-                    opacity: 0.7;
+                    // opacity: 0.7;
+                     filter: sepia(0) saturate(2);
+                     transition: all 0.5s;
                 }
                 
-            }
-
-            div[class*='prev'] {
-                -webkit-filter: grayscale(100%);
-                  -moz-filter: grayscale(100%);
-                  -ms-filter: grayscale(100%);
-                  -o-filter: grayscale(100%);
-                  filter: grayscale(100%);
-                  filter: url(grayscale.svg); /* Firefox 4+ */
-                  filter: gray; /* IE 6-9 */;
             }
 
             .prev1{
@@ -193,7 +185,8 @@ strong {
             text-shadow: 1px 1px 2px #000;
         }
         &:hover{
-            opacity: 0.7;
+            // opacity: 0.7;
+             filter: saturate(1.8);
             -webkit-transition: 0.2s ease-in-out;
             -o-transition: 0.2s ease-in-out;
             transition: 0.2s ease-in-out;
@@ -428,7 +421,7 @@ footer {
                 border-bottom: 1px dotted $footerText;
             }
 
-            a:hover, a:active, a:focus {
+            a:hover, a:active, a:focus, a:visited:hover {
                 background-color: $footerText;
                 color: $footerColor;
                 padding: 0 8px;

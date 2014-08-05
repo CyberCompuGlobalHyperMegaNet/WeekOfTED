@@ -92,7 +92,9 @@ button[disabled], input[disabled] {
   cursor: default; }
 
 input[type=checkbox], input[type=radio] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0; }
 
 input[type=search] {
@@ -153,7 +155,6 @@ strong {
       background-size: cover;
       background-position: center;
       -webkit-transition: 0.2s ease-in-out;
-      -o-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out; }
       .contain .aside a .preview .previewDetails {
         position: absolute;
@@ -162,6 +163,8 @@ strong {
         bottom: 0;
         color: #eee;
         text-shadow: 1px 1px 2px #000;
+        background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#444444));
+        background: -webkit-linear-gradient(transparent, #444444);
         background: linear-gradient(transparent, #444444); }
         .contain .aside a .preview .previewDetails p {
           margin: 0;
@@ -174,6 +177,17 @@ strong {
           padding-bottom: 15px; }
       .contain .aside a .preview:hover {
         opacity: 0.7; }
+    .contain .aside a div[class*='prev'] {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-filter: url(grayscale.svg);
+              filter: url(grayscale.svg);
+      /* Firefox 4+ */
+      -webkit-filter: gray;
+              filter: gray;
+      /* IE 6-9 */ }
     .contain .aside a .prev1 {
       background-image: url(../images/graham-hill.png); }
     .contain .aside a .prev2 {
@@ -187,7 +201,8 @@ strong {
 
 .thisWeek {
   font-weight: 300;
-  font-size: 50px; }
+  font-size: 50px;
+  margin-top: -50px; }
 
 .tedTopic {
   font-family: "Yellowtail", cursive;
@@ -217,10 +232,12 @@ strong {
       border-bottom: 200px solid transparent;
       -webkit-animation: arrowAnimation ease-in-out 0.7s forwards;
       /* Chrome, Safari, Opera */
-      -webkit-animation-delay: 0.7s;
+      -webkit-animation-delay: 1.0s;
       /* Safari and Chrome */
-      animation: arrowAnimation ease-in-out 0.7s forwards;
-      animation-delay: 0.7s; }
+      -webkit-animation: arrowAnimation ease-in-out 0.7s forwards;
+              animation: arrowAnimation ease-in-out 0.7s forwards;
+      -webkit-animation-delay: 1.0s;
+              animation-delay: 1.0s; }
       .main .welcomeMessage .bigArrow p {
         position: absolute;
         width: 350px;
@@ -232,13 +249,18 @@ strong {
         font-size: 73px;
         line-height: 68px; }
   .main #videoBox {
+    position: relative;
     -webkit-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out; }
+    .main #videoBox p {
+      position: absolute;
+      left: 20px;
+      bottom: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000; }
     .main #videoBox:hover {
       opacity: 0.7;
       -webkit-transition: 0.2s ease-in-out;
-      -o-transition: 0.2s ease-in-out;
       transition: 0.2s ease-in-out; }
 
 /* Chrome, Safari, Opera */
@@ -255,6 +277,18 @@ strong {
     left: 20%;
     top: 0px; } }
 /* Standard syntax */
+@-webkit-keyframes myfirst {
+  0% {
+    left: 120%;
+    top: 0px; }
+
+  70% {
+    left: 0%;
+    top: 0px; }
+
+  100% {
+    left: 10%;
+    top: 0px; } }
 @keyframes myfirst {
   0% {
     left: 120%;
@@ -296,6 +330,17 @@ strong {
     height: 150px;
     margin-right: 15px; }
 
+.overlayOpaqueBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  background-color: #282828;
+  opacity: 0;
+  z-index: 99; }
+
 .overlay {
   display: none;
   position: absolute;
@@ -304,25 +349,21 @@ strong {
   right: 0;
   bottom: 0;
   min-height: 100%;
-  background-color: rgba(40, 40, 40, 0.9); }
+  z-index: 100; }
   .overlay .iframeContainer {
     position: relative;
     display: block;
     width: 854px;
     margin: 0 auto; }
-    .overlay .iframeContainer .close .closeButton {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      fill: #fff; }
-      .overlay .iframeContainer .close .closeButton:hover {
-        fill: #00b680; }
-    .overlay .iframeContainer .videoEmbed {
-      display: block;
-      margin: 0 auto;
-      margin-top: 15%; }
+    .overlay .iframeContainer .overlayVideoFrame {
+      display: none;
+      background-color: #fff; }
+      .overlay .iframeContainer .overlayVideoFrame .videoEmbed {
+        display: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15%;
+        border: 2px solid #fff; }
 
 .visible {
   display: block; }
@@ -330,24 +371,36 @@ strong {
 .notVisible {
   display: none; }
 
+.fullSize {
+  width: 854px;
+  height: 480px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+
+.blurFilter {
+  filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -webkit-filter: blur(3px); }
+
+.backgroundColor {
+  background-color: #282828;
+  opacity: 0; }
+
+@-webkit-keyframes slideLeft {
+  0% {
+    right: -500px; }
+
+  100% {
+    right: 900px; } }
+
 @keyframes slideLeft {
   0% {
     right: -500px; }
 
   100% {
     right: 900px; } }
-header {
-  background-color: pink;
-  height: 90px; }
-  header .topic {
-    width: 30%;
-    background-color: purple;
-    float: left; }
-  header .twitt {
-    width: 70%;
-    background-color: #BADA55;
-    float: right; }
-
 footer {
   background-color: #c0392b;
   max-height: 200px;
@@ -355,9 +408,6 @@ footer {
   padding: 0;
   padding-top: 15px;
   position: relative; }
-  footer a, footer a:hover, footer a:visited {
-    text-decoration: none;
-    color: #fdf6f0; }
   footer .third {
     width: 33.33%;
     float: left; }
@@ -369,8 +419,12 @@ footer {
     color: #fdf6f0;
     text-shadow: 5px 3px #940f08;
     font-size: 72px; }
+    footer .weekTheme a, footer .weekTheme a:hover, footer .weekTheme a:visited {
+      text-decoration: none;
+      color: #fdf6f0; }
   footer .footerinfo {
     position: absolute;
+    z-index: 1;
     width: 30%;
     max-height: 200px;
     right: 30px;
@@ -380,5 +434,17 @@ footer {
     color: #fdf6f0;
     text-align: left;
     vertical-align: middle; }
+    footer .footerinfo a, footer .footerinfo a:visited {
+      text-decoration: none;
+      color: #fdf6f0;
+      font-weight: 300;
+      border-bottom: 1px dotted #fdf6f0; }
+    footer .footerinfo a:hover, footer .footerinfo a:active, footer .footerinfo a:focus {
+      background-color: #fdf6f0;
+      color: #c0392b;
+      padding: 0 8px;
+      font-weight: 700;
+      -webkit-transition: all 0.25s;
+              transition: all 0.25s; }
     footer .footerinfo b {
       font-weight: 400; }

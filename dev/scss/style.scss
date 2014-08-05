@@ -46,7 +46,7 @@ strong {
         float: left;
         // background-color: blue;
         a{
-            
+           
             .preview{
                 position: relative;
                 height: 200px;
@@ -81,10 +81,20 @@ strong {
                 }
                 &:hover{
                     opacity: 0.7;
-
                 }
                 
             }
+
+            div[class*='prev'] {
+                -webkit-filter: grayscale(100%);
+                  -moz-filter: grayscale(100%);
+                  -ms-filter: grayscale(100%);
+                  -o-filter: grayscale(100%);
+                  filter: grayscale(100%);
+                  filter: url(grayscale.svg); /* Firefox 4+ */
+                  filter: gray; /* IE 6-9 */;
+            }
+
             .prev1{
                 background-image: url(../images/graham-hill.png);
             }
@@ -113,6 +123,7 @@ strong {
 .thisWeek {
     font-weight: 300;
     font-size: 50px;
+    margin-top: -50px;
 }
 
 .tedTopic {
@@ -142,7 +153,6 @@ strong {
         .bigArrow{
             position: relative;
             left: 120%;
-
             width: 0;
             height: 0;
             border-top: 200px solid transparent;
@@ -152,9 +162,9 @@ strong {
            // animations
 
             -webkit-animation: arrowAnimation ease-in-out 0.7s forwards; /* Chrome, Safari, Opera */
-            -webkit-animation-delay: 0.7s; /* Safari and Chrome */
+            -webkit-animation-delay: 1.0s; /* Safari and Chrome */
             animation: arrowAnimation ease-in-out 0.7s forwards;
-            animation-delay: 0.7s;
+            animation-delay: 1.0s;
 
 
             p{
@@ -171,9 +181,17 @@ strong {
         }
     }
     #videoBox{
+        position: relative;
         -webkit-transition: 0.2s ease-in-out;
         -o-transition: 0.2s ease-in-out;
         transition: 0.2s ease-in-out;   
+        p{
+            position: absolute;
+            left: 20px;
+            bottom: 10px;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+        }
         &:hover{
             opacity: 0.7;
             -webkit-transition: 0.2s ease-in-out;
@@ -237,6 +255,21 @@ strong {
     }
 }
 
+
+.overlayOpaqueBackground{
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    // background-color: rgba(40,40,40,0.8);
+    // background-color: rgba(256,256,256,0);
+    background-color: #282828;
+    opacity: 0;
+    z-index: 99;
+}
     
 
 
@@ -248,42 +281,90 @@ strong {
     right: 0;
     bottom: 0;
     min-height: 100%;
-    background-color: rgba(40,40,40,0.9);
-    // filter: alpha(opacity = 50);
-
+    // background-color: rgba(40,40,40,0.8);
+    // background-color: rgba(256,256,256,0);
+    // background-color: #282828;
+    // opacity: 0;
+    z-index: 100;
     .iframeContainer{ 
         position: relative;
         display: block;
         width: 854px;
         margin: 0 auto;
-        .close{
-            .closeButton{
-                position: absolute;
-                top: -40px;
-                left: 0;
-                width: 20px;
-                height: 20px;
-                fill: #fff;
-                &:hover{
-                    fill: #00b680;
-                }
+        // .close{
+        //     display: block;
+        //     // .closeButton{
+        //     //     position: absolute;
+        //     //     top: -40px;
+        //     //     left: 0;
+        //     //     width: 20px;
+        //     //     height: 20px;
+        //     //     fill: #fff;
+        //     //     &:hover{
+        //     //         fill: #00b680;
+        //     //     }
+        //     // }
+        // }
+        .overlayVideoFrame{
+            display: none;
+            // visibility: hidden;
+            // width: 85.4px;
+            // height: 48px;
+            // margin-left: 50%;
+            // margin-top: 30%;
+            background-color: #fff;
+
+            .videoEmbed{ 
+                display: none;
+                display: block;
+                margin: 0 auto;
+                margin-top: 15%;
+                border: 2px solid #fff;
+
+                //full dimensions 854x480
             }
-        }
-        .videoEmbed{
-            display: block;
-            margin: 0 auto;
-            margin-top: 15%;
- 
-        }
-    } 
+        } 
+    }
 }
 
 .visible{
     display: block;
+    // visibility: visible;
 }
 
 .notVisible{
     display: none;
+}
+
+.fullSize{
+    width: 854px;
+    height: 480px;
+    -webkit-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.blurFilter{
+    // background: rgba(40,40,40,0.9); 
+
+    filter:blur(3px);
+    -o-filter:blur(3px);
+    -ms-filter:blur(3px);
+    -moz-filter:blur(3px);
+    -webkit-filter:blur(3px); 
+
+    // -webkit-transition: 0.4s;
+    // -o-transition: 0.4s;
+    // transition: 0.4s;
+}
+
+.backgroundColor{
+    // background-color: rgba(40,40,40,0.9); 
+    background-color: #282828;
+    opacity: 0;
+    // -webkit-transition: 0.5s ease-in-out;
+    // -o-transition: 0.5s ease-in-out;
+    // transition: 0.5s ease-in-out;
 }
 
 //******************************
@@ -293,26 +374,6 @@ strong {
 @keyframes slideLeft {
     0% { right: -500px; }
     100% { right: 900px;}
-}
-//******************************
-// HEADER
-//******************************
-
-header {
-    background-color: pink;
-    height: 90px;
-
-        .topic {
-            width: 30%;
-            background-color: purple;
-            float: left;
-        }
-
-        .twitt {
-            width: 70%;
-            background-color: #BADA55;
-            float: right;
-        }
 }
 
 
@@ -328,11 +389,6 @@ footer {
     padding-top: 15px;
     position: relative;
 
-    a, a:hover, a:visited {
-        text-decoration: none;
-        color: $footerText;
-    }
-
     .third { // divides the footer in 3 columns
         width: 33.33%;
         float: left;
@@ -346,23 +402,42 @@ footer {
         color: $footerText;
         text-shadow: 5px 3px #940f08;
         font-size: 72px;
+
+        a, a:hover, a:visited {
+            text-decoration: none;
+            color: $footerText;
+        }
     }
 
     .footerinfo {
         position: absolute;
+        z-index: 1;
         width: 30%;
         max-height: 200px;
         right: 30px;
         top: 30px;
         font-family: $fontStack;
         font-weight: 300;
-        color: #fdf6f0;
+        color: $footerText;
         text-align: left;
         vertical-align: middle;
-            
+            a, a:visited {
+                text-decoration: none;
+                color: $footerText;
+                font-weight: 300;
+                border-bottom: 1px dotted $footerText;
+            }
+
+            a:hover, a:active, a:focus {
+                background-color: $footerText;
+                color: $footerColor;
+                padding: 0 8px;
+                font-weight: 700;
+                transition: all 0.25s; 
+            }
+
             b {
                 font-weight: 400;
             }
     }
 }
-

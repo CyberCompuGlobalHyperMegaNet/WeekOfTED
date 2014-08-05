@@ -54,7 +54,7 @@ module.exports = function(grunt) {
         browsers: ['last 5 version', 'ie 7', 'ie 8', 'ie 9']
       },
       no_dest: {
-        src: 'dev/scss/style.css'
+        src: 'dev/css/style.css'
       }
     },
     connect: {
